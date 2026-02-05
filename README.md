@@ -1,42 +1,35 @@
-HRMS Lite
+# HRMS Lite 🏢
 
-A lightweight Human Resource Management System (HRMS) built with React and FastAPI.
-Designed to manage employees and attendance with a clean UI and a fast, async backend.
-
+A lightweight Human Resource Management System built with React and FastAPI.
 
 ## 🚀 Tech Stack
 
+**Frontend:**
+- React 19 with Vite
+- Tailwind CSS 4
 
-Frontend
-React 19 (Vite)
-Tailwind CSS 4
-
-Backend
-FastAPI (Python)
-MongoDB
-Motor (Async MongoDB driver)
-Pydantic v2
+**Backend:**
+- FastAPI (Python)
+- MongoDB with Motor (async driver)
+- Pydantic v2
 
 ## 📁 Project Structure
 
-HRMS-Lite/
-│
-├── client/                  
+```
+├── client/          # React frontend
 │   ├── src/
-│   │   ├── components/      
-│   │   ├── pages/           
-│   │   ├── services/       
-│   │   └── main.jsx
-│   ├── index.html
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
 │   └── package.json
 │
-└── server/                  
-    ├── config/              
-    ├── routes/              
-    ├── schemas/            
-    ├── main.py              
+└── server/          # FastAPI backend
+    ├── config/
+    ├── routes/
+    ├── schemas/
+    ├── main.py
     └── requirements.txt
-
+```
 
 ## ⚙️ Setup & Installation
 
@@ -45,9 +38,8 @@ HRMS-Lite/
 ```bash
 cd server
 python -m venv venv
-
-venv\Scripts\activate      
-# source venv/bin/activate 
+venv\Scripts\activate      # Windows
+# source venv/bin/activate # Mac/Linux
 pip install -r requirements.txt
 ```
 
